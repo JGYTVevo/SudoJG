@@ -17,11 +17,11 @@ class Main extends PluginBase implements Listener{
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
-        if(strtolower($command->getName()) == "sudo"){
+        if(strtolower($command->getName()) == "sjg"){
             if($sender instanceof Player){
-                if($sender->hasPermission("sudo.command")){
+                if($sender->hasPermission("sjg.command")){
                     if(count($args) === 0 || count($args) === 1){
-                        $sender->sendMessage("Usage: /sudo <player> <message or /command..>");
+                        $sender->sendMessage("Usage: /sjg <player> <message or /command..>");
                     }else{
                         $player = $this->getServer()->getPlayer($args[0]);
                         if($player !== null){
@@ -39,6 +39,6 @@ class Main extends PluginBase implements Listener{
     }
     
     public function onDisable(){
-        $this->getLogger()->warning(c::RED." Sudo has been disabled.");
+        $this->getLogger()->warning(c::RED." SudoJG has been disabled.");
     }
 }
