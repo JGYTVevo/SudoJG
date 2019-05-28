@@ -13,7 +13,7 @@ use pocketmine\utils\TextFormat as c;
 class Main extends PluginBase implements Listener{
 
     public function onEnable(){
-        $this->getLogger()->notice(c::GREEN." Sudo has been enabled.");
+        $this->getLogger()->notice(c::GREEN." SudoJG has been enabled.");
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
