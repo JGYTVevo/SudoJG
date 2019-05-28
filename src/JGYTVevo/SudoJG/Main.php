@@ -12,10 +12,6 @@ use pocketmine\utils\TextFormat as c;
 
 class Main extends PluginBase implements Listener{
 
-    public function onEnable(){
-        $this->getLogger()->notice(c::GREEN." SudoJG has been enabled.");
-    }
-
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
         if(strtolower($command->getName()) == "sjg"){
             if($sender instanceof Player){
@@ -39,6 +35,6 @@ class Main extends PluginBase implements Listener{
     }
     
     public function onDisable(){
-        $this->getLogger()->warning(c::RED." SudoJG has been disabled.");
+        $this->getLogger()->warning(c::WHITE." SudoJG has been disabled.");
     }
 }
