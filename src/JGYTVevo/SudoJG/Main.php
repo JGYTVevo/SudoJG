@@ -34,7 +34,6 @@ class Main extends PluginBase implements Listener{
         return true;
     }
     
-    public function onDisable(){
-        $this->getLogger()->warning(c::WHITE." SudoJG has been disabled.");
+    
     }
 }
