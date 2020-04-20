@@ -1,6 +1,6 @@
 name: SudoJG
 version: 1.0.1
-api: [3.11.4]
+api: [3.12.0]
 author: JGYTVevo
 main: JGYTVevo\SudoJG\Main
 commands:
