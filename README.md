@@ -6,5 +6,5 @@ Discord server: https://discord.gg/u9pfDw9
 
 How to use the plugin? 
 
-/sjg (player) (message) or (command)
+/sudo (player) (message) or (command)
 Permission sudo.command
