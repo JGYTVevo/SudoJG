@@ -4,10 +4,10 @@ api: [3.12.0]
 author: JGYTVevo
 main: JGYTVevo\SudoJG\Main
 commands:
-  sjg:
+  sudo:
     description: Force a player to chat or run a command
     usage: /sjg <player> <message or /command..>
 permissions:
-  sjg.command:
+  sudo.command:
     default: op
     description: Allows player to use /sudo
