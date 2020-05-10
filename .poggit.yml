@@ -4,4 +4,6 @@ branches:
 projects:
   SudoJG:
     path: ""
+    lint:
+      phpstan: false
 ...
